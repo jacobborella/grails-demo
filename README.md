@@ -12,10 +12,11 @@ You can then run an image with the following commands
 This will start up a container with the source code installed. You can of course also refer to your own source repo instead. Mine is just added for convenience.
 
 To run the s2i in OpenShift, use *docker save* to export the image and *docker load* to import it into the OpenShift registry. Then build the application in the following steps:
-{code}
+
+```
 oc new-project demo
 oc new-app grails-centos7~https://github.com/jacobborella/grails-demo
-{code}
+```
 
 References:
 * https://blog.openshift.com/create-s2i-builder-image/
