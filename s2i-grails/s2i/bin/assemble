@@ -16,7 +16,8 @@ fi
 #
 if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
   echo "---> Restoring build artifacts..."
-  mv /tmp/artifacts/. ./
+  mkdir /opt/app-root/src/.gradle
+  mv /tmp/artifacts/opt/app-root/src/.gradle/* /opt/app-root/src/.gradle
 fi
 
 echo "---> Installing application source..."
