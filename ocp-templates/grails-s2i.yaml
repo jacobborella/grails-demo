@@ -9,6 +9,9 @@ parameters:
 - description: The repository to pull code from
   name: GIT_REPO
   value: https://github.com/jacobborella/grails-demo
+- description: Environment container must run in
+  name: RUNENV
+  value: test
 objects:
 - apiVersion: v1
   kind: BuildConfig
