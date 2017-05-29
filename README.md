@@ -15,7 +15,7 @@ docker run -p 8080:8080 grails-app
 
 This will start up a container with the source code installed. You can of course also refer to your own source repo instead. Mine is just added for convenience.
 
-To run the s2i in OpenShift, use *docker save* to export the image and *docker load* to import it into the OpenShift registry. Then build the application in the following steps:
+To run the s2i in OpenShift, create the docker image from the Dockerfile on the server, which hosts the OpenShift registry. Alternatively use *docker save* to export the image from your local machine and *docker load* to import it into the OpenShift registry. Then build the application in the following steps:
 
 ```
 oc new-project demo
