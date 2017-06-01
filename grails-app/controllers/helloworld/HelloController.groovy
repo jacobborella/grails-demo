@@ -2,7 +2,7 @@ package helloworld
 
 class HelloController {
     def load() {
-        render "load" + FindPrimeNumber(10000)
+        render "load" + FindPrimeNumber(100000)
     }
     def index() {
         render "Hello World!!"
