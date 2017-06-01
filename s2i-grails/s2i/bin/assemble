@@ -26,3 +26,4 @@ cp -Rf /tmp/src/. ./
 echo "---> Building application from source..."
 #Add build steps for your application, eg npm install, bundle install, pip install, etc.
 grails package
+mv build/libs/*.jar build/libs/myapplication.jar
